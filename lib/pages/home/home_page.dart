@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.shopping_bag),
+                  Icon(Icons.shopping_bag_outlined),
                   SizedBox(
                     width: 10,
                   ),
@@ -29,7 +29,7 @@ class HomePage extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.person),
+                  Icon(Icons.person_outline),
                   SizedBox(
                     width: 10,
                   ),

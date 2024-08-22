@@ -3,15 +3,21 @@ import 'package:flutter/material.dart';
 class Profile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Stack(
-        children: [
-          Container(
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: NetworkImage(
-                          "https://media.licdn.com/dms/image/v2/D4E03AQEYk5x2BQqOmg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1708207818662?e=1729728000&v=beta&t=v4Dn-taQKiu0Yf2fXQVYDckuNgaM2XTsU-8V6l_N8Gw")))),
-        ],
+    return Padding(
+      padding: const EdgeInsets.all(16.0),
+      child: Container(
+        //padding: EdgeInsets.all(16),
+
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(12), color: Colors.deepOrange),
+        child: Stack(
+          children: [
+            Image(
+                fit: BoxFit.cover,
+                image: NetworkImage(
+                    "https://fiverrbox.com/wp-content/uploads/2021/12/nft-art.jpg-5-2c4a6d40.jpg")),
+          ],
+        ),
       ),
     );
   }

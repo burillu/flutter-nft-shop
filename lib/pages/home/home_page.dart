@@ -9,6 +9,7 @@ class HomePage extends StatelessWidget {
       length: 2,
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.black,
           centerTitle: true,
           title: Text(
             "NFT Shop",
@@ -44,6 +45,11 @@ class HomePage extends StatelessWidget {
             Profile(),
           ],
         ),
+        floatingActionButton: FloatingActionButton.extended(
+            backgroundColor: Colors.black,
+            onPressed: () {},
+            label: Text("Vendi NFT"),
+            icon: Icon(Icons.attach_money)),
       ),
     );
   }

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:nft_shop/pages/profile/profile.dart';
+import 'package:nft_shop/pages/shop/shop.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -14,14 +16,22 @@ class HomePage extends StatelessWidget {
           bottom: TabBar(
             tabs: [
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.home),
-                  Text("home"),
+                  Icon(Icons.shopping_bag),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Text("Shop"),
                 ],
               ),
               Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(Icons.person),
+                  SizedBox(
+                    width: 10,
+                  ),
                   Text("Profilo"),
                 ],
               )
@@ -30,8 +40,8 @@ class HomePage extends StatelessWidget {
         ),
         body: TabBarView(
           children: [
-            Text("Hello Home"),
-            Text("Hello Profile"),
+            Shop(),
+            Profile(),
           ],
         ),
       ),
